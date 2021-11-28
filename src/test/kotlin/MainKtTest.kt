@@ -164,22 +164,6 @@ class MainKtTest {
         )
         assertEquals(true, result)
     }
-
-    @Test
-    fun limitsTypeCard_Mir() {
-
-        val typeCard: String = "Mir"
-        val previousAmountRub: Int = 0
-        val amountKop: Int = 1_000_000
-
-        val result = limitsTypeCard(
-            typeCard = typeCard,
-            previousAmountRub = previousAmountRub,
-            amountKop = amountKop
-        )
-        assertEquals(true, result)
-    }
-
     @Test
     fun limitsTypeCard_Mir_limit_Day_reached() {
 
